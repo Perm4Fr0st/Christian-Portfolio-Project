@@ -28,6 +28,7 @@ watch(isDark, (newValue) => {
 </script>
 
 <template>
+  
   <Header />
   <div class="container m-0 p-0">
   <Home />
