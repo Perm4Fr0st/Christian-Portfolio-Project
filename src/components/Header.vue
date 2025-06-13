@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top" :class="isDark ? 'navbar-dark bg-dark' : 'navbar-light bg-light'">
     <div class="container-fluid px-4">
-      <a class="navbar-brand fw-bold" href="#">MySite</a>
+      <!-- <a class="navbar-brand fw-bold" href="#">MySite</a> -->
 
       <button
         class="navbar-toggler"
@@ -18,17 +18,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#skill">Skill</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
-        <button class="btn btn-outline-secondary" @click="toggleDarkMode">
-          {{ isDark ? 'Light Mode' : 'Dark Mode' }}
+        <button class="btn btn-outline-secondary d-flex align-items-center" @click="toggleDarkMode" title="Toggle Dark Mode">
+          <i :class="isDark ? 'fas fa-lightbulb' : 'fas fa-moon'"></i>
         </button>
       </div>
     </div>

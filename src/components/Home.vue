@@ -1,8 +1,8 @@
 <template>
   <section
     id="home"
+    class="min-vh-100 vw-100"
     :class="['d-flex align-items-center', isDark ? 'bg-black text-white' : 'bg-light text-dark']"
-    style="min-height: 100vh; width: auto;"
   >
     <div class="container">
       <transition name="fade-slide" appear>
@@ -14,11 +14,9 @@
               I Build & Design <br />
               Web Interfaces.
             </h1>
-            <p class="lead mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing illo ad labore
-              dolor elit.
-            </p>
-            <button class="btn btn-primary btn-lg">Resume</button>
+            <!-- <p class="lead mb-4">
+             
+            </p> -->
           </div>
 
           <!-- Right Image -->
